@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Formulario</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" href="img/favicon.png">
+</head>
+
+<body>
+  <h1>FORMULARIO </h1>
+  <form action="https://formsubmit.co/rickidios05@gmail.com" method="POST">
+
+    <!--datos personales adonde se enviara el formulario-->
+    <h2>INFORMACION<br>DE CONTACTO</h2>
+    <img src="img/foto de perfil.png" alt="foto de perfil" width="5%">
+    <a href="mailto:rickidios05@gmail.com">rickidios05@gmail.com</a>
+    <a href="tel:5621525777">562-152-5777</a> 
+    
+    <!--datos personales de tipo texto y numerico-->
+    <h2>Ingresa tus datos personales:</h2>
+    <h3>Campos obligatorios marcados con el asterisco:</h3>
+    <input type = "url" placeholder="URL de tu foto" maxlength="55"><br>
+    <input type = "url" placeholder="URL de tu certificado*" maxlength="55" required><br>
+    <input type = "text"  placeholder="Ingresa tu nombre*" maxlength="15" required><br>
+    <input type = "text" placeholder="Ingresa tu apellido*" maxlength="15" required><br>
+    <input type = "number" max="99" min="15" placeholder="Tu edad" maxlength="2"><br>
+    <input type = "email" placeholder="Ingresa tu correo*" maxlength="25" required><br>
+    <input type = "tel" placeholder="Ingresa tu # de telefono*" maxlength="10" required><br>
+    <input type = "password" placeholder="Ingresa tu contraseña" maxlength="8"><br>
+
+    <!--seccion de la fecha-->
+    <h2>Selecciona la fecha de nacimiento:</h2>
+    <input type = "date"><br>
+
+    <!--seccion de la hora-->
+    <h2>Selecciona la hora actual:</h2>
+    <input type = "time"><br>
+
+    <!--seccion el archivo-->
+    <h2>Envia tu documento:</h2>
+    <input type = "file"><br>
+    
+    <!--botones tipo radio para seleccionar una opcion-->
+    <h2>Selecciona la opcion de tu sexo:</h2>
+    <label for="masculino"><input id="masculino" type = "radio" value="masculino" name="sexo">Masculino</label><br>
+    <label for="femenino"><input id="femenino" type = "radio" value="femenino" name="sexo" checked>Femenino</label><br>
+    
+    <!--botones de tipo checkbox para seleccionar una o varias opciones-->
+    <h2>Selecciona una o varias opciones, de las actividades que te gusta realizar:</h2>
+    <label for="leer"><input id="leer" type = "checkbox" value="leer" name="jovi">Leer<br></label>
+    <label for="jugar"><input id="jugar" type = "checkbox" value="jugar" name="jovi">Jugar<br></label>
+    <label for="otro"><input id="otro" type = "checkbox" value="otro" name="jovi" checked>Otro</label><br>
+
+    <!--boton para seleccionar una opcion-->
+    <h2>Escoge la opcion de la carrera que vas a estudiar:</h2>
+    <select>
+      <option value="Informatica">Informatica</option>
+      <option value="Leyes">Leyes</option>
+      <option value="Ciencias">Ciencias</option>
+    </select><br>
+
+    <!--boton para escoger un color-->
+    <h2>Escoge tu color favorito:</h2>
+    <input type = "color"><br>
+
+    <!--boton para escoger un rango-->
+    <h2>Determina tu rango de tu aprendizaje:</h2>
+    <input type = "range"><br>
+
+  <!--area para escribir texto-->
+    <h2>Escribe tus comentarios o sugerencias:</h2>
+    <textarea>comentario</textarea><br>
+
+      <!--borrar todo el contenido-->
+    <h2>Haz click para restablecer el formulario:</h2>
+    <input type = "reset"><br>
+    
+    <!--boton para enviar el formulario-->
+    <h2>Haz click para enviar el formulario:</h2>
+    <input type = "submit" title="rickidios05@gmail.com">Enviar consulta
+  </form>
+  
+  <script src="script.js"></script>
+</body>
+
+</html>

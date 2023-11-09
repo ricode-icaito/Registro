@@ -1,0 +1,19 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: #dcd2bc;
+  color: #050505;
+}
+
+h1 {
+  text-align: center;
+}
+
+img {
+  border-radius: 50px ;
+}
+
+
